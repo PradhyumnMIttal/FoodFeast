@@ -176,14 +176,14 @@ span.price {
 <div class="row">
   <div class="col-75">
     <div class="container">
-		<form>
+		<form class="form" id="form" onsubmit="return myFun()">
         <div class="row">
           <div class="col-50">
             <h3>Billing Address / Delivery Address</h3>
-            <label for="fname"><i class="fa fa-user" ></i> Full Name</label><input type="text">
-			  <label for="email"><i class="fa fa-envelope"></i> Email</label><input type="text">
-            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label> <input type="text">
-            <label for="city"><i class="fa fa-institution"></i> City</label><input type="text">
+            <label for="fname"><i class="fa fa-user" ></i> Full Name</label><input type="text" id="fullname"  >
+			  <label for="email"><i class="fa fa-envelope"></i> Email</label><input type="text" id="email"  >
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label> <input type="text"  id="address">
+            <label for="city"><i class="fa fa-institution"></i> City</label><input type="text"  id="city" >
 
             <div class="row">
               <div class="col-50">
@@ -201,7 +201,7 @@ span.price {
             <h3>Payment</h3>
 			  <label for="fname"> All Cards Accepted Here</label>
             <label for="cname">Name on Card</label> <input type="text">
-            <label for="ccnum">Credit card number</label><input type="text" >
+            <label for="ccnum">Credit card number</label><input type="number" id="num" onkeyup="EnableDisable(this)" > 
             <label for="expmonth">Exp Month</label><input type="text" >
             <div class="row">
               <div class="col-50">
@@ -210,19 +210,22 @@ span.price {
               <div class="col-50">
                 <label for="cvv">CVV</label><input type="password" max="3" >
               </div>
+             
             </div>
           </div>
         </div> 
-		</form>
-    </div>
-  </div>
-</div>
-<input type="submit" id="myBtn" class="btn" value="Submit">
 	
-<!-- The Modal -->
+<input type="button" id="myBtn" class="btn" value="Submit" disabled="disabled">
+
+</form>
+</div>
+</div>
+</div>
+	
+<!-- The Modal  --->
 <div id="myModal" class="modal">
 
-  <!-- Modal content -->
+  <!-- Modal content --->
   <div class="modal-content">
     <span class="close">&times;</span>
     <h3>Your Order has been Placed Succesfully</h3>
@@ -236,30 +239,47 @@ span.price {
 </div>
 
 <script>
-// Get the modal
+ function EnableDisable(num){
+        //Reference the Button.
+        var myBtn = document.getElementById("myBtn");
+ 
+        //Verify the TextBox value.
+        if (num.value.trim() != "") {
+            //Enable the TextBox when TextBox has value.
+            myBtn.disabled = false;
+        } else {
+            //Disable the TextBox when TextBox is empty.
+            myBtn.disabled = true;
+        }
+    };
+  
+
+
+    
+ //Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
+ //Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
+ //Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+ //When the user clicks the button, open the modal 
 btn.onclick = function() {
-  modal.style.display = "block";
+ modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+ //When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+ //When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+ if (event.target == modal) {
+   modal.style.display = "none";
+}
 }
 </script>
 </body>
