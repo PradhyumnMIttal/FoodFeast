@@ -5,7 +5,42 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="main.css" />
-	</head>
+	</head><style>
+		#mySidenav a {
+  position: absolute;
+  left: -100px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 160px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 100px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 160px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 220px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 280px;
+  background-color: #555
+}</style>
 	<body id="top">
 					<div class="inner">
 						<header>
@@ -170,10 +205,16 @@
       </tr></table>
   </form>
 
+  <div id="mySidenav" class="sidenav">
+  <a href="index.html" id="about">Home&nbsp;&nbsp;&nbsp; &nbsp;       </a>
+  <a href="recipe.html" id="blog">Recipes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      </a>
+  <a href="about.html" id="projects">About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    </a>
+  <a href="contact.html" id="contact">Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   </a>
 				<footer id="footer">
 					<div class="inner">
 						<h2>Cook lil, Quick fulfil.</h2>
 						<p>The best thing about trying these indulgent dishes at home is that you can prepare it without putting in much efforts. You just need a few Know More in place and you are good to go! </p>
+						<h4>Contact us @ 99990-88880</h4>
 
 						
 						

@@ -6,6 +6,41 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
 <style>
+		#mySidenav a {
+  position: absolute;
+  left: -100px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 100px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 160px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 220px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 280px;
+  background-color: #555
+}
 	.aditi{
 	
 	}
@@ -19,9 +54,9 @@ background-image: url("bg2.jpg");
 	
 }
 .boxed:hover {
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
 
 }
 .inner{
@@ -39,9 +74,15 @@ body {
   background-image: url("bgbg1.jpg");
 }
 
+
 </style>
 </head>
 <body>
+	  <div id="mySidenav" class="sidenav">
+  <a href="index.html" id="about">Home&nbsp;&nbsp;&nbsp; &nbsp;       </a>
+  <a href="recipe.html" id="blog">Recipes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      </a>
+  <a href="about.html" id="projects">About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    </a>
+  <a href="contact.html" id="contact">Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   </a>
 <h1 align="center" style="color: white;">RECIPE!!</h1>
 <div class="thumbnail">
 <div class="boxed" style="margin-left: 28px">

@@ -4,6 +4,45 @@
 		<title>IWT PROJECT</title>
 		<link rel="stylesheet" href="main.css" />
 	</head>
+	<style>
+
+		#mySidenav a {
+  position: absolute;
+  left: -100px;
+  transition: 0.3s;
+  padding: 16px;
+  width: 160px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  vertical-align: left;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 620px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 680px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 740px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 800px;
+  background-color: #555
+}
+	</style>
 	<body id="top">
 		<section id="banner" data-video="banner">
 					<div class="inner">
@@ -25,6 +64,12 @@
 								<a href="AlooChaat.html" class="button fit" >Order Now</a>
 								
 	<button id="myBtn2" >View Recipe</button>
+  <div id="mySidenav" class="sidenav">
+  <a href="index.html" id="about">Home&nbsp;&nbsp;&nbsp; &nbsp;       </a>
+  <a href="recipe.html" id="blog">Recipes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      </a>
+  <a href="about.html" id="projects">About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    </a>
+  <a href="contact.html" id="contact">Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   </a>
+</div>
 
 <!-- The Modal -->
 <div id="myModal2" class="modal2">
@@ -75,7 +120,7 @@ window.onclick = function(event) {
 								</div>
 							</div>
 							<div class="box">
-								<a href="CrispyCorn.html" class="image fit"><img src="pic02.jpg" alt=""></a>
+								<a href="CrispyCorn.html" class="image fit"><img src="images/pic02.jpg" alt=""></a>
 								<div class="inner">
 									<h3>Crispy Corn</h3>
 									<p>An interesting and popular fried snack recipe made <br>with corn kernels and indo chinese sauces. the recipe was first introduced in the menu of restaurant chain barbeque nation as starter<br> meal.                                                               										</p>
@@ -374,13 +419,15 @@ window.onclick = function(event) {
 					<div class="inner">
 						<h2>Cook lil, Quick fulfil.</h2>
 						<p>The best thing about trying these indulgent dishes at home is that you can prepare it without putting in much efforts. You just need a few Know More in place and you are good to go!</p>
-<h2>Contact us @ 99990-88880</h2>
+						<h4>Contact us @ 99990-88880</h4>
+<!--
 						<ul class="icons">
 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>	
+						</ul>
+-->	
 					</div>
 				</footer>
 			
