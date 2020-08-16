@@ -4,44 +4,30 @@
 		<title>IWT PROJECT</title>
 		<link rel="stylesheet" href="main.css" />
 	</head>
-	<style>
+	<style>.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
-		#mySidenav a {
-  position: absolute;
-  left: -100px;
-  transition: 0.3s;
-  padding: 16px;
-  width: 160px;
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
-  color: white;
-  border-radius: 0 5px 5px 0;
-  vertical-align: left;
+  font-size: 17px;
 }
 
-#mySidenav a:hover {
-  left: 0;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-#about {
-  top: 620px;
+.topnav a.active {
   background-color: #4CAF50;
-}
+  color: white;
 
-#blog {
-  top: 680px;
-  background-color: #2196F3;
-}
-
-#projects {
-  top: 740px;
-  background-color: #f44336;
-}
-
-#contact {
-  top: 800px;
-  background-color: #555
-}
+		
 	</style>
 	<body id="top">
 		<section id="banner" data-video="banner">
@@ -53,6 +39,12 @@
 						</header>
 					</div>
 				</section>
+				<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="recipe.html">Recipes</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
 				<div id="main">
 					<div class="inner">
 						<div class="thumbnails">
@@ -64,12 +56,7 @@
 								<a href="AlooChaat.html" class="button fit" >Order Now</a>
 								
 	<button id="myBtn2" >View Recipe</button>
-  <div id="mySidenav" class="sidenav">
-  <a href="index.html" id="about">Home&nbsp;&nbsp;&nbsp; &nbsp;       </a>
-  <a href="recipe.html" id="blog">Recipes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      </a>
-  <a href="about.html" id="projects">About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    </a>
-  <a href="contact.html" id="contact">Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   </a>
-</div>
+  
 
 <!-- The Modal -->
 <div id="myModal2" class="modal2">
